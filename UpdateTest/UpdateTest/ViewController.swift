@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import AppUpdater
+
 
 class ViewController: NSViewController {
 
@@ -18,18 +18,8 @@ class ViewController: NSViewController {
 
 		// Do any additional setup after loading the view.
 	}
-	let updater = AppUpdater(owner: "AlexPerathoner", repo: "UpdateTest")
 	
-	@IBAction func check(_ sender: Any) {
-		
-		updater.check().catch(policy: .allErrors) { error in
-            if error.isCancelled {
-                // promise is cancelled if we are already up-to-date
-            } else {
-                // show alert for this error
-            }
-        }
-	}
+	
 	
 
 	override var representedObject: Any? {

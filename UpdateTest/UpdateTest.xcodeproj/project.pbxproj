@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89DC78CB59A4FD4109F5F8BB /* Pods_UpdateTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC75617C3901A4FC5AE10AA4 /* Pods_UpdateTest.framework */; };
 		FA8463F2245AB1060091A83E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8463F1245AB1060091A83E /* AppDelegate.swift */; };
 		FA8463F4245AB1060091A83E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8463F3245AB1060091A83E /* ViewController.swift */; };
 		FA8463F6245AB1090091A83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8463F5245AB1090091A83E /* Assets.xcassets */; };
 		FA8463F9245AB1090091A83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8463F7245AB1090091A83E /* Main.storyboard */; };
-		FA846403245AB1AB0091A83E /* AppUpdater in Frameworks */ = {isa = PBXBuildFile; productRef = FA846402245AB1AB0091A83E /* AppUpdater */; };
+		FA846406245ABC660091A83E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA846405245ABC660091A83E /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DE383A7C5F209A76A96F6AB /* Pods-UpdateTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdateTest.debug.xcconfig"; path = "Target Support Files/Pods-UpdateTest/Pods-UpdateTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2399EA01FCC21BAC9693B1 /* Pods-UpdateTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdateTest.release.xcconfig"; path = "Target Support Files/Pods-UpdateTest/Pods-UpdateTest.release.xcconfig"; sourceTree = "<group>"; };
 		FA8463EE245AB1060091A83E /* UpdateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpdateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8463F1245AB1060091A83E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA8463F3245AB1060091A83E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		FA8463F8245AB1090091A83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA8463FA245AB1090091A83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8463FB245AB1090091A83E /* UpdateTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UpdateTest.entitlements; sourceTree = "<group>"; };
+		FC75617C3901A4FC5AE10AA4 /* Pods_UpdateTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdateTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,18 +33,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA846403245AB1AB0091A83E /* AppUpdater in Frameworks */,
+				FA846406245ABC660091A83E /* BuildFile in Frameworks */,
+				89DC78CB59A4FD4109F5F8BB /* Pods_UpdateTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F30E682FBD722732ADF241D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DE383A7C5F209A76A96F6AB /* Pods-UpdateTest.debug.xcconfig */,
+				6C2399EA01FCC21BAC9693B1 /* Pods-UpdateTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A797A6E7A1E71D2C1FF97D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC75617C3901A4FC5AE10AA4 /* Pods_UpdateTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA8463E5245AB1060091A83E = {
 			isa = PBXGroup;
 			children = (
 				FA8463F0245AB1060091A83E /* UpdateTest */,
 				FA8463EF245AB1060091A83E /* Products */,
+				0F30E682FBD722732ADF241D /* Pods */,
+				A797A6E7A1E71D2C1FF97D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8463FE245AB1090091A83E /* Build configuration list for PBXNativeTarget "UpdateTest" */;
 			buildPhases = (
+				3B25D126142B5173C5FC9C6F /* [CP] Check Pods Manifest.lock */,
 				FA8463EA245AB1060091A83E /* Sources */,
 				FA8463EB245AB1060091A83E /* Frameworks */,
 				FA8463EC245AB1060091A83E /* Resources */,
+				4017B7D5D196F811B6112B86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -82,7 +109,7 @@
 			);
 			name = UpdateTest;
 			packageProductDependencies = (
-				FA846402245AB1AB0091A83E /* AppUpdater */,
+				FA846405245ABC660091A83E /* SwiftPackageProductDependency */,
 			);
 			productName = UpdateTest;
 			productReference = FA8463EE245AB1060091A83E /* UpdateTest.app */;
@@ -113,7 +140,7 @@
 			);
 			mainGroup = FA8463E5245AB1060091A83E;
 			packageReferences = (
-				FA846401245AB1AB0091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */,
+				FA846404245ABC660091A83E /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = FA8463EF245AB1060091A83E /* Products */;
 			projectDirPath = "";
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B25D126142B5173C5FC9C6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpdateTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4017B7D5D196F811B6112B86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpdateTest/Pods-UpdateTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UpdateTest/Pods-UpdateTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UpdateTest/Pods-UpdateTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA8463EA245AB1060091A83E /* Sources */ = {
@@ -275,18 +344,22 @@
 		};
 		FA8463FF245AB1090091A83E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE383A7C5F209A76A96F6AB /* Pods-UpdateTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UpdateTest/UpdateTest.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = UpdateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexP.UpdateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -295,18 +368,22 @@
 		};
 		FA846400245AB1090091A83E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2399EA01FCC21BAC9693B1 /* Pods-UpdateTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UpdateTest/UpdateTest.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XX9N244QQT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = UpdateTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexP.UpdateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -337,7 +414,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA846401245AB1AB0091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */ = {
+		FA846404245ABC660091A83E /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/AppUpdater";
 			requirement = {
@@ -348,9 +425,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA846402245AB1AB0091A83E /* AppUpdater */ = {
+		FA846405245ABC660091A83E /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA846401245AB1AB0091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */;
+			package = FA846404245ABC660091A83E /* RemoteSwiftPackageReference */;
 			productName = AppUpdater;
 		};
 /* End XCSwiftPackageProductDependency section */
