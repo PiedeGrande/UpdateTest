@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0FB93C73-0358-4784-9E9F-82825800D6E6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F8F2B3B-0785-4B05-9C56-390F0100572A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A75FE1E-F5F0-4852-92A1-CAC923C405FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F875E827-1C0C-442F-9688-C9C0DF2177B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "check()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F875E827-1C0C-442F-9688-C9C0DF2177B3 - 728a7729897cc0c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppUpdater.AppUpdater.check() -&gt; PromiseKit.Promise&lt;()&gt;"
+                  moduleName = "UpdateTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "1491">
+               </Location>
+               <Location
+                  uuid = "F875E827-1C0C-442F-9688-C9C0DF2177B3 - 5394fbcfca113f86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; PromiseKit.Promise&lt;(data: Foundation.Data, response: __C.NSURLResponse)&gt; in AppUpdater.AppUpdater.check() -&gt; PromiseKit.Promise&lt;()&gt;"
+                  moduleName = "UpdateTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE558CD2-4BA9-4094-920D-2B76CC3D3800"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B045B44-BB9A-4A46-A902-DC58FBFBB9A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F5B9ED0-6195-43E3-A637-F19DAB999312"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39DFAA7D-82FF-4EAE-A855-69B188D194FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/UpdateTest-heudjkmmwcvdbwdjpvusigbsvcwa/SourcePackages/checkouts/AppUpdater/AppUpdater.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "check()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

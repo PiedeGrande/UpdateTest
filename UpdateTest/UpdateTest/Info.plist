@@ -32,7 +32,7 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
-	<key>SUFeedURL</key>
-	<string>https://github.com/PiedeGrande/UpdateTest/releases/</string>
+	<key>SUPublicEDKey</key>
+	<string>/Users/alex/Downloads/Sparkle-1.18.0/dsa_pub.pem</string>
 </dict>
 </plist>
