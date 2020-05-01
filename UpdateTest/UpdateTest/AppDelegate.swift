@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	
 	@IBAction func checkForUpdates(_ sender: Any) {
         let updater = SUUpdater.shared()
-        updater?.feedURL = URL(string: "https://github.com/PiedeGrande/UpdateTest/releases/")
+        updater?.feedURL = URL(string: "https://piedegrande.github.io/UpdateTest/appcast.xml")
         updater?.checkForUpdates(self)
     }
 	

@@ -12,7 +12,8 @@
 		FA8463F4245AB1060091A83E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8463F3245AB1060091A83E /* ViewController.swift */; };
 		FA8463F6245AB1090091A83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8463F5245AB1090091A83E /* Assets.xcassets */; };
 		FA8463F9245AB1090091A83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8463F7245AB1090091A83E /* Main.storyboard */; };
-		FA846406245ABC660091A83E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = FA846405245ABC660091A83E /* SwiftPackageProductDependency */; };
+		FA846406245ABC660091A83E /* AppUpdater in Frameworks */ = {isa = PBXBuildFile; productRef = FA846405245ABC660091A83E /* AppUpdater */; };
+		FAE2E407245C331E009F539C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = FAE2E406245C331E009F539C /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FA8463F8245AB1090091A83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA8463FA245AB1090091A83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8463FB245AB1090091A83E /* UpdateTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UpdateTest.entitlements; sourceTree = "<group>"; };
+		FAE2E406245C331E009F539C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = "../../../../Downloads/Sparkle-1.18.0/dsa_pub.pem"; sourceTree = "<group>"; };
 		FC75617C3901A4FC5AE10AA4 /* Pods_UpdateTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdateTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA846406245ABC660091A83E /* BuildFile in Frameworks */,
+				FA846406245ABC660091A83E /* AppUpdater in Frameworks */,
 				89DC78CB59A4FD4109F5F8BB /* Pods_UpdateTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +49,6 @@
 				0DE383A7C5F209A76A96F6AB /* Pods-UpdateTest.debug.xcconfig */,
 				6C2399EA01FCC21BAC9693B1 /* Pods-UpdateTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,7 @@
 				FA8463F7245AB1090091A83E /* Main.storyboard */,
 				FA8463FA245AB1090091A83E /* Info.plist */,
 				FA8463FB245AB1090091A83E /* UpdateTest.entitlements */,
+				FAE2E406245C331E009F539C /* dsa_pub.pem */,
 			);
 			path = UpdateTest;
 			sourceTree = "<group>";
@@ -109,7 +111,7 @@
 			);
 			name = UpdateTest;
 			packageProductDependencies = (
-				FA846405245ABC660091A83E /* SwiftPackageProductDependency */,
+				FA846405245ABC660091A83E /* AppUpdater */,
 			);
 			productName = UpdateTest;
 			productReference = FA8463EE245AB1060091A83E /* UpdateTest.app */;
@@ -140,7 +142,7 @@
 			);
 			mainGroup = FA8463E5245AB1060091A83E;
 			packageReferences = (
-				FA846404245ABC660091A83E /* RemoteSwiftPackageReference */,
+				FA846404245ABC660091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */,
 			);
 			productRefGroup = FA8463EF245AB1060091A83E /* Products */;
 			projectDirPath = "";
@@ -157,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8463F6245AB1090091A83E /* Assets.xcassets in Resources */,
+				FAE2E407245C331E009F539C /* dsa_pub.pem in Resources */,
 				FA8463F9245AB1090091A83E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +417,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FA846404245ABC660091A83E /* RemoteSwiftPackageReference */ = {
+		FA846404245ABC660091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/AppUpdater";
 			requirement = {
@@ -425,9 +428,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FA846405245ABC660091A83E /* SwiftPackageProductDependency */ = {
+		FA846405245ABC660091A83E /* AppUpdater */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FA846404245ABC660091A83E /* RemoteSwiftPackageReference */;
+			package = FA846404245ABC660091A83E /* XCRemoteSwiftPackageReference "AppUpdater" */;
 			productName = AppUpdater;
 		};
 /* End XCSwiftPackageProductDependency section */
