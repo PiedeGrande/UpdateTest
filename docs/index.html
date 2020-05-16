@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1982">
-	<link rel="stylesheet" type="text/css" href="style.css?7743">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?5669">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?8321">
+	<link rel="stylesheet" type="text/css" href="style.css?9759">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?5764">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -79,8 +79,9 @@
 					{% for release in site.github.releases limit:1%}
 	{% unless release.draft %}
 		{% unless release.prerelease and page.release_only %}
-			<a href="{{ asset.browser_download_url }}" style="background: #74B1BD; color: #FFFFFF!important; cursor: pointer;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .3rem;font-family: \" josefin="" sans\";width:="" 31.53%;box-sizing:="" border-box;"="" target="_blank">Download now</a>
-
+			{% for asset in release.assets limit:1 %}
+				<a href="{{ asset.browser_download_url }}" style="background: #74B1BD; color: #FFFFFF!important; cursor: pointer;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .3rem;font-family: \" josefin="" sans\";width:="" 31.53%;box-sizing:="" border-box;"="" target="_blank">Download now</a>
+			{% endfor %}
 		{% endunless %}
 	{% endunless %}
 {% endfor %}
@@ -244,9 +245,9 @@
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?5302"></script>
-<script src="./js/bootstrap.bundle.min.js?2381"></script>
-<script src="./js/blocs.min.js?3520"></script>
+<script src="./js/jquery-3.3.1.min.js?3514"></script>
+<script src="./js/bootstrap.bundle.min.js?1611"></script>
+<script src="./js/blocs.min.js?953"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
