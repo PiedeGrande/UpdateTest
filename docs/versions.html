@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1594">
-	<link rel="stylesheet" type="text/css" href="style.css?8446">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?6625">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?9916">
+	<link rel="stylesheet" type="text/css" href="style.css?543">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?2145">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -76,7 +76,7 @@
 <!-- bloc-3 END -->
 
 <!-- bloc-4 -->
-<div class="bloc l-bloc tc-st-patricks-blue " id="bloc-4">
+<div class="bloc l-bloc tc-st-patricks-blue" id="bloc-4">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-md-6 col-lg-9">
@@ -88,7 +88,7 @@
 			
 			<br>
 			<div style="width:100%;">
-				<div style="border: 1px solid gray; width:280px; border-radius: 5px; padding: 5px; padding-left: 12px; display: inline-block;" onclick="window.open('','mywindow');">
+				<div style="border: 1px solid gray; width:280px; border-radius: 5px; padding: 5px; padding-left: 12px; display: inline-block;" onclick="window.open('{{ release.url }}','Release');">
 
 					<h2  style="margin: auto;padding-top: 7px;">SlimHUD  {{ release.tag_name | remove_first:'v' }}</h2>
 				</div>
@@ -103,8 +103,6 @@
 			<p>{{ release.body | markdownify }}</p>
 
 			{% for asset in release.assets limit:1 %}
-				<p>got here</p>
-				<p>{{ asset.browser_download_url }}</p>
 				<h4><a href=" {{ asset.browser_download_url }} ">Download here</a></h4>
 				<br>
 				<hr class="rounded">
@@ -161,9 +159,9 @@
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?1502"></script>
-<script src="./js/bootstrap.bundle.min.js?5842"></script>
-<script src="./js/blocs.min.js?2530"></script>
+<script src="./js/jquery-3.3.1.min.js?2834"></script>
+<script src="./js/bootstrap.bundle.min.js?9884"></script>
+<script src="./js/blocs.min.js?1228"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
