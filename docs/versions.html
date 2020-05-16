@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?2413">
-	<link rel="stylesheet" type="text/css" href="style.css?6689">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?7204">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?689">
+	<link rel="stylesheet" type="text/css" href="style.css?3687">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?538">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -80,38 +80,38 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-md-6 col-lg-9">
-				<div class=" ">
+				<div class="  ">
 					
-		{% for release in site.github.releases %}
-			{% unless release.draft %}
-				{% unless release.prerelease and page.release_only %}
-						{% for asset in release.assets limit:1 %}
+{% for release in site.github.releases %}
+	{% unless release.draft %}
+		{% unless release.prerelease and page.release_only %}
+				{% for asset in release.assets limit:1 %}
 			
-							<br>
-							<div style="width:100%;">
-								<div style="border: 1px solid gray; width:280px; border-radius: 5px; padding: 5px; padding-left: 12px; display: inline-block;" onclick="window.open('','mywindow');">
-
-									<h2  style="margin: auto;padding-top: 7px;">SlimHUD  {{ release.tag_name | remove_first:'v' }}</h2>
-								</div>
-
-								<h4 style="color:gray;display: inline-block; padding-left:12px"><em>{{ release.published_at | date_to_rfc822 }}</em></h4>
-							</div>
-
-
-
-							<br><h1><strong>Releases Notes for v{{ release.tag_name | remove_first:'v' }}</strong><br/></h1>
-
-
-						{% endfor %}
-
-					<p>{{ release.body | markdownify }}</p>
-					<h4><a href="{{ asset.browser_download_url }}">Download here</a></h4>
 					<br>
-					<hr class="rounded">
+					<div style="width:100%;">
+						<div style="border: 1px solid gray; width:280px; border-radius: 5px; padding: 5px; padding-left: 12px; display: inline-block;" onclick="window.open('','mywindow');">
 
-				{% endunless %}
-			{% endunless %}
-		{% endfor %}
+							<h2  style="margin: auto;padding-top: 7px;">SlimHUD  {{ release.tag_name | remove_first:'v' }}</h2>
+						</div>
+
+						<h4 style="color:gray;display: inline-block; padding-left:12px"><em>{{ release.published_at | date_to_rfc822 }}</em></h4>
+					</div>
+
+					<br>
+					<h1><strong>Releases Notes for v{{ release.tag_name | remove_first:'v' }}</strong><br/></h1>
+					<h3>{{ release.title }}</h3>
+
+				{% endfor %}
+
+			<p>{{ release.body | markdownify }}</p>
+			{{ asset.browser_download_url }}
+			<h4><a href="{{ asset.browser_download_url }}">Download here</a></h4>
+			<br>
+			<hr class="rounded">
+
+		{% endunless %}
+	{% endunless %}
+{% endfor %}
 
 					
 				</div>
@@ -159,9 +159,9 @@
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?8494"></script>
-<script src="./js/bootstrap.bundle.min.js?5674"></script>
-<script src="./js/blocs.min.js?9506"></script>
+<script src="./js/jquery-3.3.1.min.js?9761"></script>
+<script src="./js/bootstrap.bundle.min.js?9912"></script>
+<script src="./js/blocs.min.js?2494"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
