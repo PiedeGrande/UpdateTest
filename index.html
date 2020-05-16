@@ -6,10 +6,8 @@ subtitle: This is where I will tell my friends way too much about me
 
 <!DOCTYPE html>
 <html>
-  <body>
-  
-		This is a webpage
-		and this is some text
+	<body>
+
 		{% for release in site.github.releases %}
 			{% unless release.draft %}
 				{% unless release.prerelease and page.release_only %}
@@ -27,12 +25,12 @@ subtitle: This is where I will tell my friends way too much about me
 
 
 
-							<br><h1><strong>Releases Notes for v{{ release.tag_name | remove_first:'v' }}</strong><br/></h1>';
+							<br><h1><strong>Releases Notes for v{{ release.tag_name | remove_first:'v' }}</strong><br/></h1>
 
 
 						{% endfor %}
 
-					<p>DESCRIPTION</p>
+					<p>{{ release.body | markdownify }}</p>
 					<h4><a href="{{ asset.browser_download_url }}">Download here</a></h4>
 					<br>
 					<hr class="rounded">
