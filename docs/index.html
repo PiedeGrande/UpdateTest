@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html>
 <head>
@@ -7,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?3210">
-	<link rel="stylesheet" type="text/css" href="style.css?6103">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?8935">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1883">
+	<link rel="stylesheet" type="text/css" href="style.css?6309">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?6502">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -60,7 +62,7 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-0 -->
-<div class="bloc b-parallax bgc-charcoal" id="bloc-0">
+<div class="bloc b-parallax bgc-charcoal " id="bloc-0">
 	<div class="container bloc-xxl">
 		<div class="row">
 			<div class="col-lg-5 col-sm-8 offset-sm-2 offset-md-0 col-md-5 order-md-0 order-1 offset-lg-0">
@@ -72,7 +74,18 @@
 				</h1>
 				<h3 class="mg-md float-none text-center text-md-left tc-moonstone-blue">
 					<i>Your</i> favourite&rsquo;s OS' HUDs. Reinvented.
-				</h3><a href="https://github.com/AlexPerathoner/SlimHUD/releases/latest" class="btn btn-lg btn-style btn-moonstone-blue" target="_blank">Download now</a>
+				</h3>
+				<div >
+					{% for release in site.github.releases limit:1%}
+	{% unless release.draft %}
+		{% unless release.prerelease and page.release_only %}
+			<a href="{{ asset.browser_download_url }}" style="background: #74B1BD; color: #FFFFFF!important; cursor: pointer;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .3rem;font-family: \" josefin="" sans\";width:="" 31.53%;box-sizing:="" border-box;"="" target="_blank">Download now</a>
+
+		{% endunless %}
+	{% endunless %}
+{% endfor %}
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -231,9 +244,9 @@
 <!-- Main container END -->
     
 
-<script src="./js/jquery-3.3.1.min.js?839"></script>
-<script src="./js/bootstrap.bundle.min.js?8199"></script>
-<script src="./js/blocs.min.js?3307"></script>
+<script src="./js/jquery-3.3.1.min.js?8494"></script>
+<script src="./js/bootstrap.bundle.min.js?5674"></script>
+<script src="./js/blocs.min.js?9506"></script>
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
