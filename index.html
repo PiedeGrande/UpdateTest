@@ -8,34 +8,38 @@ subtitle: This is where I will tell my friends way too much about me
 <html>
   <body>
   
-        This is a webpage
-        and this is some text
-        {% for release in site.github.releases %}
-            {% unless release.draft %}
-                {% unless release.prerelease and page.release_only %}
-                    <item>
-                        <title>{{ release.name }}</title>
-                        <description><![CDATA[{{ release.body | markdownify }}]]></description>
-                        <pubDate>{{ release.published_at | date_to_rfc822 }}</pubDate>
-                        {% for asset in release.assets limit:1 %}
-                            {% assign build_nums = asset.name | replace_first:'Project.v','' | replace_first:'.b',',' | remove_first:'.zip' | split:',' %}
-                            {% if build_nums.size == 2 %}
-                                {% assign version = build_nums[1] %}
-                                {% assign short_version = release.tag_name | remove_first:'v' %}
-                            {% else %}
-                                {% assign version = release.tag_name | remove_first:'v' %}
-                            {% endif %}
-                            <enclosure
-                                url="{{ asset.browser_download_url }}"
-                                sparkle:version="{{ release.tag_name | remove_first:'v' }}"
-                                {% if short_version %}sparkle:shortVersionString="{{ release.tag_name | remove_first:'v' }}"{% endif %}
-                                length="{{ asset.size }}"
-                                type="application/octet-stream" />
-                        {% endfor %}
-                    </item>
-                {% endunless %}
-            {% endunless %}
-        {% endfor %}
+		This is a webpage
+		and this is some text
+		{% for release in site.github.releases %}
+			{% unless release.draft %}
+				{% unless release.prerelease and page.release_only %}
+						{% for asset in release.assets limit:1 %}
+			
+							<br>
+							<div style="width:100%;">
+								<div style="border: 1px solid gray; width:280px; border-radius: 5px; padding: 5px; padding-left: 12px; display: inline-block;" onclick="window.open('','mywindow');">
 
-      </body>
+									<h2  style="margin: auto;padding-top: 7px;">SlimHUD  {{ release.tag_name | remove_first:'v' }}</h2>
+								</div>
+
+								<h4 style="color:gray;display: inline-block; padding-left:12px"><em>{{ release.published_at | date_to_rfc822 }}</em></h4>
+							</div>
+
+
+
+							<br><h1><strong>Releases Notes for v{{ release.tag_name | remove_first:'v' }}</strong><br/></h1>';
+
+
+						{% endfor %}
+
+					<p>DESCRIPTION</p>
+					<h4><a href="{{ asset.browser_download_url }}">Download here</a></h4>
+					<br>
+					<hr class="rounded">
+
+				{% endunless %}
+			{% endunless %}
+		{% endfor %}
+
+	  </body>
 </html>
